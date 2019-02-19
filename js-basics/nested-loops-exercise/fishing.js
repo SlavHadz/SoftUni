@@ -4,14 +4,6 @@ function solve(input) {
     let fishesCounter = 0;
     let fishName = input.shift();
     while(fishName !== 'Stop') {
-        if(fishName == 'Stop'){
-            break;
-        }
-        if(dailyQuota === 0) {
-            console.log('Lyubo fulfilled the quota!');
-            console.log('Lyubo lost 0 leva today.');
-            return;
-        }
         let fishWeight = +input.shift();
         fishesCounter += 1;
         let fishNamePrize = 0;
@@ -32,7 +24,7 @@ function solve(input) {
         fishName = input.shift();
     }
     if(finalPrize <= 0) {
-        console.log(`Lyubo's profit from ${fishesCounter} fishes is ${Math.abs(finalPrize.toFixed(2))} leva.`)
+        console.log(`Lyubo's profit from ${fishesCounter} fishes is ${Math.abs(finalPrize).toFixed(2)} leva.`)
     } else {
         console.log(`Lyubo lost ${finalPrize.toFixed(2)} leva today.`);
     }
