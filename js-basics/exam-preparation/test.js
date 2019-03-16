@@ -1,3 +1,4 @@
 function solve(a, b) {
-  return a + b;
+  let arr = [a, b];
+  return arr;
 }
