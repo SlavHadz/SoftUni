@@ -21,4 +21,4 @@ function bestPlayer(input) {
     }
 }
 
-bestPlayer(['Silva', '5', 'Harry Kane', '10']);
+bestPlayer(['Silva', '5', 'Harry Kane', '10', 'Some other guy']);
